@@ -1,0 +1,210 @@
+
+== Initiating a project
+
+A project starts with a formalized change request, a business case, a set of documents or … just an idea. The goal of the initiating phase is to give a better understanding of the project in order to formally authorize the actual start of the project or a new project phase.
+
+The project charter documents the business needs, project objectives, expected deliverables and the economic aspects of the project as well as the project team, activities and responsibilities.
+
+The project charter also links the project to the strategic objectives of the organization and should identify any appropriate terms of reference, obligations, assumptions and constraints.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* {blank}
++
+____
+Project statement of work
+____
+* {blank}
++
+____
+Business case and / or previous phase documents
+____
+* {blank}
++
+____
+A contract
+____
+
+|Project Charter
+|===
+
+=== Overview
+
+image:media/image11.png[image,width=642,height=361]
+
+[width="99%",cols="8%,8%,69%,7%,8%",options="header",]
+|===
+|Step |Who |What |Type |Scale
+|1 |PM a|
+Checks the reference documentation and link:#develop-project-charter[+++develops the projects charter+++], documenting the project’s:
+
+* {blank}
++
+____
+Context
+____
+* {blank}
++
+____
+Goal
+____
+* {blank}
++
+____
+Constraints and limits
+____
+* {blank}
++
+____
+Requirements
+____
+* {blank}
++
+____
+Deliverable
+____
+* {blank}
++
+____
+Risks
+____
+
+|O |All
+|2 |PM |Using gathered elements from the previous step, the PM link:#planning-a-project[+++develops the project plan+++] and adds the following elements to the project charter: project plan |O |All
+|3.a |PM |The PM link:#establish-the-project-team[+++establishes the project team+++] and updates the project charter with the following elements: project team |O |All
+|3.b |PM / SPO |The PM link:#identify-stakeholders[+++establishes the stakeholders+++] list and updates the project charter with the following elements: stakeholder list |O |All
+|4 |PM |The PM link:#plan-quality[+++plans the quality of the project+++] and updates the project charter with the following elements: KPI and quality control |O |All
+|5 |PM / SPO |The PM link:#plan-communications[+++plans de project communications+++] and updates the project charter with the following elements: communication plan |O |
+| | |Optional | |
+|6 |SPO/STK |Upon reviewing the final version of the project charter, the project sponsor assisted by the stakeholders give a go / no decision |D |All
+|7 |PM |Upon receiving a go decision, the PM initialises the project environment |A |All
+|8 |PM, SPO, Team |Once the project environment is ready, the PM produces a KickOff document and organises a kickoff meeting to share the project charter elements with the project team |O |All
+|===
+
+[arabic]
+. {blank}
++
+==== Hints / Tips
++
+The provided documentation is clear enough to figure out the project’s requirements?
++
+Is the scope, limits, constraints of the project clear?
++
+A launch date has been expressed? Is the launch date compatible with the actual project portfolio?
++
+A maturity / confidence level has been estimated?
++
+Is the charter document complete?
++
+Can a go decision be taken reading the project charter?
++
+Is the project part of a program? If so, is the current project compliant with the program?
++
+Is the project funded?
++
+Is the project justified?
++
+Are requirements in terms of support or external services (if applicable) included? If so, the related budget has been also included?
++
+Effort has been split between internal and external resources?
++
+New acquisitions costs are included (if applicable, ex: new licenses, hardware, …)?
++
+Running costs have been estimated (if applicable)?
+. {blank}
++
+==== Related documents and forms 
++
+Project Charter
++
+Quality plan
++
+Requirements / Product backlog
++
+Project plan
++
+Kickoff presentation
++
+Meeting minutes
+
+[arabic]
+. {blank}
++
+=== Subprocesses
+[arabic]
+.. {blank}
++
+==== Develop project charter
+
+Developing the project charter is the first and most important step of the project initiation phase. The purpose of developing a project charter is as follows:
+
+to formally authorize a project or a new project phase;
+
+to identify the project manager and the appropriate project manager responsibilities and authorities;
+
+to document the business needs, project objectives, expected deliverables and the economic aspects of the project.
+
+The project charter links the project to the strategic objectives of the organization and should identify any appropriate terms of reference, obligations, assumptions and constraints.
+
+The project charter includes the project plans.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project statement of work
+* Business case and / or previous phase documents
+* A contract
+
+a|
+* Project Charter
+
+|===
+
+[width="100%",cols="13%,87%",options="header",]
+|===
+|image:media/image6.png[Notes Post-it contour,width=45,height=45] |*Note:* business needs can be translated into user stories / requirements (in turn organised into epics) which will form the basis of the Product Backlog. Sometimes the development of the project charter is also called the scoping phase of the project. Whatever the project lifecycle, a project charter needs to be produced. Some agile projects call this phase the Sprint 0.
+|===
+
+==== Identify Stakeholders 
+
+The purpose of Identify stakeholders is to determine the individuals, groups or organizations affected by, or affecting, the project and to document relevant information regarding their interest and involvement.
+
+Stakeholders may be actively involved in the project, may be internal or external to the project and may be at varying authority levels.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project statement of work
+* Project organization chart
+
+|Stakeholder register
+|===
+
+==== Establish the project team
+
+The purpose of Establish project team is to acquire the human resources needed to complete the project.
+
+The project manager should determine how and when project team members will be acquired, as well as how and they will be released from the project. When human resources are not available inside the organization, consideration should be given to hiring additional resources or subcontracting work to another organization. The work location, commitment, roles and responsibilities, as well as reporting and communication requirements should be established.
+
+The project manager may or may not have absolute control over the selection of the project team members, but the project manager should be involved in their selection. The project manager, when possible, should take into consideration factors such as skills and expertise, different personalities and group dynamics when establishing the project team. Because projects are typically performed in a changing environment, this process is normally performed continuously throughout the project.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Resource requirements
+* Project organisation chart
+* Resource availability
+* Project plan
+* Role description
+
+a|
+Staff Assignment
+
+Staff Contracts (when necessary)
+
+|===

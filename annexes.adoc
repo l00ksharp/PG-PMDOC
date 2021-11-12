@@ -1,0 +1,642 @@
+== Annexes
+=== Common project KPI
+==== Earned Value 
+Earned Value Analysis (EVA) is a method that allows the project manager to measure the amount of work actually performed on a project beyond the basic review of cost and schedule reports. EVA is based on trend analysis of the project’s “burn rate”. This method relies on a key measure known as the project’s earned value.
+
+In Earned Value Management, there are three data sources:
+
+the budget (or planned) value of work scheduled
+
+the actual value of work completed
+
+the “earned value” of the “real” work completed
+
+Calculation elements:
+
+Budget at Completion (BAC): the BAC represents 100% of the planned budget, the budget at completion is sometimes called Total Planned Value.
+
+Planned Value (PV): Planned Value = (Planned Percent Complete) x BAC
+
+Actual Cost (AC): budget that is actually spent when the Earned value analysis is done
+
+Earned Value (EV): is the amount of the task that is actually completed. EV = % Complete (Actual) x Task Budget
+
+Indicators:
+
+Schedule Performance Index (SPI): measures the schedule efficiency of a project. SPI = EV/PV.
+
+Cost Performance Index (CPI): measures the cost efficiency of a project. CPI= EV/AC
+
+✏️ Note: SPI >= 1 indicates good schedule efficiency, any value <1 indicates scheduling issues, the project or task is late. CPI >= 1 indicates good cost efficiency, any value <1 indicates cost issues, the project or task is costing more than planned
+
+Sources: PMI (Project Management Institute)
+
+More about earned value model:
+
+https://www.humphreys-assoc.com/evms/basic-concepts-earned-value-management-evm-ta-a-74.html[+++https://www.humphreys-assoc.com/evms/basic-concepts-earned-value-management-evm-ta-a-74.html+++]
+
+https://en.wikipedia.org/wiki/Earned_value_management[+++https://en.wikipedia.org/wiki/Earned_value_management+++]
+
+https://www.pmi.org/learning/library/earned-value-management-systems-analysis-8026[+++https://www.pmi.org/learning/library/earned-value-management-systems-analysis-8026+++]
+
+==== Other KPI
+
+Additional KPI are often used in projects, here are some examples:
+
+[width="100%",cols="19%,16%,26%,13%,13%,13%",options="header",]
+|===
+| | | |Tolerance levels | |
+|*KPI* |Goal |Calculation |OK |Warning |Alert
+|DV deliverables |Check actual deliverables vs planned to date |Qty deliverable / planned |>=1 |>=0,75 and <1 |<0,75
+|TC task completed |Check actual task vs planned to date |Qty tasks completed / planned |>=1 |>=0,75 and <1 |<0,75
+|RU resource usage |Check actual effort vs planned to date |Hours (or days) worked vs planned |<=1 |>1 and <=1,2 |>1,2
+|PST Perimeter stability |Measure stability of the project perimeter |Qty Requirements / Qty initial requirements (at scoping) |<=1,15 |>=1,15 and <1,3 |>=1,3
+|*SCP* |Scope changes |Σ Effort~changerequests~/Σ Effort~initial~ |<=15% |>15% and <=30% |>30%
+|RSK Risk level |Measure current risk level of the project |Max(current risk level) |Low |Medium |High
+|*QA last campaign* |Measure the quality of the release on |(Qty blocking defect + Qty Major defects) / Total defects |<=5% |>=5% and <=15% |=>15%
+|===
+
+==== Additional quality elements
+
+Validating deliverables
+
+_Meeting minutes_
+
+Meeting minutes needs to be produced for each meeting. They are released in a maximum of two business days after the meeting. All feedback should be provided within four working days after the release of the initial version of the meeting minutes. If no feedback is sent back after the 4 business days deadline, the Meeting minutes is automatically validated.
+
+_Documents_
+
+The standard process for validating a document product is as follows:
+
+The PM publishes the document to the relevant parties
+
+Feedback is provided by the relevant parties live during a review meeting or within 5 business days in the source document using revision mode
+
+Validation is provided by the relevant validator
+
+A maximum of 3 iterations is allowed to complete a document. Otherwise, a risk is triggered, and the planning impacts should be evaluated. If no feedback is provided with 5 business days (when not provided during a review meeting), the document is considered as automatically validated.
+
+_Software_
+
+Validating apps is done during the User Acceptance Tests. User acceptance must start in a maximum of 8 business days after the software is released into the test environment.
+
+✏️ Note: UAT should be performed with a formalized test plan, whatever the project size.
+
+If defects are detected during UAT, defects should be declared with as much detail as possible in order to reproduce the same behavior given the same testing condition (screenshots and step by step actions are a good practice).
+
+Severity
+
+Blocking: the test could not be performed because of a failure. There is no possible workaround
+
+Major: the test could be performed but not with the expected result or behavior. There is a possible workaround.
+
+Minor: all other cases of unexpected results.
+
+User acceptance criteria
+
+A software can be considered as validated when:
+
+100 % of the UAT priority perimeter is covered by the software
+
+There are no blocking or major defect without simple workaround remaining to be fixed
+
+[arabic, start=2]
+. {blank}
++
+=== What done means 
++
+A document version is considered as done once it is released or validated otherwise it is in progress.
++
+A software version is considered as done once it is complete (it implements the planned list of requirements), passes unit testing, is released and passes UAT otherwise it is in progress.
++
+A project is considered as done once all “live” requirements are analysed (functional specifications), designed (technical specifications), implemented (code + unit test), tested (UAT) and released into production.
+. {blank}
++
+=== What do to when progress can’t be measured with accuracy 
+
+In case of difficulties to obtain % of progress on some tasks, the following rule can be used:
+
+0% not started,
+
+20% started incomplete,
+
+50% near completion,
+
+80% completed but not validated (by review, UAT, …),
+
+100 % completed and validated
+
+=== Writing user stories / requirements
+
+In software development and product management, a user story is an informal, natural language description of one or more features of a software system. A user story is a tool used in Agile software development to capture a description of a software feature from an end-user perspective. A user story describes the type of user, what they want and why. A user story helps to create a simplified description of a requirement.
+
+User stories are often recorded on index cards, on post-it notes, or in project management software. Depending on the project, user stories may be written by various stakeholders such as clients, users, managers or development team members.
+
+Requirements always change as teams and customers learn more about the system as the project progresses. It's not exactly realistic to expect project teams to work off a static requirements list and then deliver functional software months later.
+
+With user story approach, we replace big upfront design with a "just enough" approach. User stories reduce the time spent on writing exhaustive documentation by emphasizing customer-centric conversations. Consequently, user stories allow teams to deliver quality software more quickly, which is what customers prefer. There are quite a few benefits for adopting user story approach in agile development such as:
+
+The simple and consistent format saves time when capturing and prioritizing requirements while remaining versatile enough to be used on large and small features alike.
+
+Keep yourself expressing business value by delivering a product that the client really needs
+
+Avoid introducing detail too early that would prevent design options and inappropriately lock developers into one solution.
+
+Avoid the appearance of false completeness and clarity
+
+Get to small enough chunks that invite negotiation and movement in the backlog
+
+Leave the technical functions to the architect, developers, testers, and so on
+
+==== Basic Concepts of User Story
+
+A user story is a lightweight method for quickly capturing the "who", "what" and "why" of a product requirement. In simple terms, user stories are stated ideas of requirements that express what users need. User stories are brief, with each element often containing fewer than 10 or 15 words each. User stories are "to-do" lists that help you determine the steps along the project's path. They help ensure that your process, as well as the resulting product, will meet your requirements.
+
+A user story is defined incrementally, in three stages:
+
+The brief description of the need
+
+The conversations that happen during backlog grooming and iteration planning to solidify the details
+
+The tests that confirm the story's satisfactory completion
+
+And these, although, are known as the 3C's - Card, Conversation and Confirmation. We will talk more about this later on in this user story guide.
+
+==== INVEST User Stories
+
+The acronym INVEST helps to remember a widely accepted set of criteria, or checklist, to assess the quality of a user story. If the story fails to meet one of these criteria, the team may want to reword it, or even consider a rewrite (which often translates into physically tearing up the old story card and writing a new one). A good user story should be - INVEST:
+
+Independent: Should be self-contained in a way that allows to be released without depending on one another.
+
+Negotiable: Only capture the essence of user's need, leaving room for conversation. User story should not be written like contract.
+
+Valuable: Delivers value to end user.
+
+Estimable: User stories have to able to be estimated so it can be properly prioritized and fit into sprints.
+
+Small: A user story is a small chunk of work that allows it to be completed in about 3 to 4 days.
+
+Testable: A user story has to be confirmed via pre-written acceptance criteria.
+
+==== How to Write User Stories?
+
+User stories only capture the essential elements of a requirement:
+
+Who it is for?
+
+What it expects from the system?
+
+Why it is important (optional?)?
+
+The most common user story template is the following:
+
+As a [Role] I want to [Action] so that [Benefit]
+
+Where:
+
+Role (who) - The user should be an actual human who interacts with the system.
+
+Role represents the person, system, subsystem or any entity else who will interact with the system to be implemented to achieve a goal. He or she will gain values by interacting with the system.
+
+Be as specific as possible
+
+The development team is NOT a user
+
+Action (what) - The behavior of the system should be written as an action.
+
+Action represents a user's expectation that can be accomplished through interacting with the system.
+
+Usually unique for each User Story
+
+The "system" is implied and does not get written in the story
+
+Active voice, not passive voice ("I can be notified")
+
+Benefits (why)- The benefit should be a real-world result that is non-functional or external to the system.
+
+Benefits represents the value behind the interaction with the system.
+
+Many stories may share the same benefit statement.
+
+The benefit may be for other users or customers, not just for the user in the story.
+
+Think about a user story by considering the followings:
+
+The user story will bring value to someone or certain party (e.g., customers).
+
+The user story is fulfilling a user's need (e.g., receive an SMS when the item is arrived)
+
+There is a reason to support implementing this user story (e.g., customer can go pick up the item she purchased)
+
+✏️ Note: User stories are written in everyday language and describe a specific goal (what) from the perspective of an individual (who) along with the reason (why) he/she wants it. In software development, the goal is often a new product feature, the individual is some type of end-user and the reason is the benefit that the user sees in the targeted product feature.
+
+==== Detailing User Stories 
+
+Card
+
+Card represents 2-3 sentences used to describe the intent of the story that can be considered as an invitation to conversation. The card serves as a memorable token, which summarizes intent and represents a more detailed requirement, whose details remain to be determined.
+
+You don't have to have all of the Product Backlog Items written out perfectly "up front", before you bring them to the team. It acknowledges that the customer and the team will be discovering the underlying business/system needed as they are working on it. This discovery occurs through conversation and collaboration around user stories. The Card is usually following the format similar to the one below:
+
+As a (role) of the product, I can (do action) so that I can obtain (some benefits / value)
+
+✏️ Note: the written text, the invitation to a conversation, must address the "who (role)", "what (action)" and "why (benefits)" of the story.
+
+Conversation
+
+Conversation represents a discussion between the target users, team, product owner, and other stakeholders, which is necessary to determine the more detailed behavior required to implement the intent. In other words, the card also represents a "promise for a conversation" about the intent.
+
+The collaborative conversation facilitated by the Product Owner which involves all stakeholders and the team.
+
+The conversation is where the real value of the story lies and the written Card should be adjusted to reflect the current shared understanding of this conversation.
+
+This conversation is mostly verbal but most often supported by documentation and ideally automated tests of various sorts (e.g., Acceptance Tests).
+
+Confirmation
+
+Confirmation represents the Acceptance Test, which is how the customer or product owner will confirm that the story has been implemented to their satisfaction. In other words, Confirmation represents the conditions of satisfaction that will be applied to determine whether or not the story fulfills the intent as well as the more detailed requirements.
+
+The Product Owner must confirm that the story is complete before it can be considered "done"
+
+The team and the Product Owner check the "doneness" of each story in light of the Team's current definition of "done"
+
+Specific acceptance criteria that is different from the current definition of "done" can be established for individual stories, but the current criteria must be well understood and agreed to by the Team. All associated acceptance tests should be in a passing state.
+
+==== Capturing user stories
+
+User stories should be identified together with the stakeholders, preferably through a face-to-face meeting. User story is a requirement discovery process instead of an upfront requirement analysis process.
+
+In the traditional requirements capturing approaches, system analyst tries to understand customers' needs and then prepare a requirement specification for the system in detail. This is not how the user story approach works. Instead of a documentation process, the identification of user story is more like a note taking process.
+
+We list the major steps for identifying user stories as following:
+
+Through the discussions with users, we listen to and understand their problems and needs
+
+And then, write down their needs as user stories at the same time.
+
+These user stories will become the source of requirements.
+
+The details could be subsequently filled just-in-time, providing the team with a "just-enough" requirement references throughout the project development process.
+
+[width="100%",cols="26%,24%,25%,25%",options="header",]
+|===
+| a|
+What’s the
+
+problem?
+
+|Who is impacted? a|
+Visualize the
+
+solution
+
+a|
+Open questions
+
+“Tell me about…”
+
+“And then…?”
+
+➔ Requirements / user stories
+
+|1 |4 |7
+a|
+CONTROL
+
+“How many...?”
+
+“How much...?”
+
+“How often…?”
+
+“Where…?”
+
+➔Facts
+
+|2 |5 |8
+a|
+Confirmation questions
+
+“If I understood
+
+correctly
+
+<rephrase>. Did I
+
+understand that
+
+correctly?
+
+=> NO go back to
+
+OPEN question
+
+=> YES choose
+
+next row
+
+|3 |6 |9
+|===
+
+The process starts in the first row, first column, box 1 and ends up in the last column of the last row, box 9:
+
+Ask open questions. The user (team) will answer by telling “stories”.
+
+Drill deeper and ask about facts in the story with CONTROL questions.
+
+Verify you understood what your user (team) told you by rephrasing the information and asking if this is correct. If the answer is NO, ask for clarification with an open question. If the answer is YES, you can choose in which row to ask questions: stay in the current row to explore more or go to the next row.
+
+Explore the 3 rows in sequence:
+
+Understand what the problem is
+
+Understand who is affected how by the problem
+
+Visualize a situation where the problem is solved
+
+Link to user stories:
+
+Who’s impacted ➔ Roles
+
+Description of the future ➔ Roles doing what (action) ….
+
+Facts ➔ non-functional requirements, business rules, details of the story (benefit / why)
+
+Visualize the solution ➔ Goal, Acceptance test (benefit / why)
+
+==== User Stories life cycle
+
+[width="100%",cols="20%,80%",]
+|===
+|Pending |Through the communication between user and project team, user stories are found. At this state, the user stories have nothing more than a short description of user's need. There is no detailed discussion of requirements, no system logic and no screen design yet. In fact, the only purpose of user story, for now, is just for reminding all parties for a future discussion of user's request written in this user story (card). It is possible that the user story will be discarded in the future.
+|To-do |Through a discussion between different stakeholders, the user stories to be addressed in the next few weeks are decided, and are put into a time-box called a sprint. Such user stories are said to be in the to-do state. No detailed discussion has yet been carried out in this state.
+|Discussing |When a user story is in the Discussing state, the end user will communicate to the development team in confirming the requirements as well as to define the acceptance criteria. Development team will write down the requirements or any decisions as conversation notes. UX specialist may create wireframes or storyboards to let user preview the proposed features in visual mock-ups, and to feel it. This process is known as user experience design (UX design).
+|Developing |After the requirements are clarified, the development team will design and implement the features to fulfill user's requests.
+|Confirming |Upon the development team has implemented a user story, the user story will be confirmed by the end user. He/she will be given access to the testing environment or a semi-complete software product (sometimes known as an alpha version) for confirming the feature. Confirmation will be performed based on the confirmation items written when detailing the user story. Until the confirmation is done, the user story is said to be in the Confirming state.
+|Completed |Finally, the feature is confirmed to be done, the user story is considered in the Finished state. Typically, this is the end of the user story. If user has a new requirement, either it is about a new feature, or it is an enhancement of the finished user story, the team would create a new user story for the next iteration.
+|===
+
+=== Grouping UserStories into Epics
+
+An epic is a large body of work that can be broken down into a number of smaller link:#writing-user-stories-requirements[+++user stories+++]. Epics often encompass multiple teams, on multiple projects, and can even be tracked on multiple boards.
+
+Epics are almost always delivered over a set of sprints. As a team learns more about an epic through development and customer feedback, link:#writing-user-stories-requirements[+++user stories+++] will be added and removed as necessary. That’s the key with agile epics: Scope is flexible, based on customer feedback and team cadence.
+
+=== Product Backlog
+
+The Product Backlog is an ordered list of everything that is known to be needed in the product to be developed. It is the single source of requirements for any changes to be made to the product. The Product Owner is responsible for the Product Backlog, including its content, availability, and ordering.
+
+A Product Backlog is never complete. The earliest development of it lays out the initially known and best-understood requirements. The Product Backlog evolves as the product and the environment in which it will be used evolves. The Product Backlog is dynamic; it constantly changes to identify what the product needs to be appropriate, competitive, and useful. If a product exists, its Product Backlog also exists.
+
+Product Backlog refinement is the act of adding detail, estimates, and order to items in the Product Backlog. This is an ongoing process in which the Product Owner and the Development Team collaborate on the details of Product Backlog items. During Product Backlog refinement, items are reviewed and revised.
+
+More information about Scrum: https://www.scrumguides.org[+++https://www.scrumguides.org+++]
+
+=== Creating a Sprint backlog
+
+In simple terms, the Sprint Backlog is the plan for the sprint. In creating a sprint backlog, the major question to be asked is how does your team get this work done? Think of the whole process as a comprehensive to-do list with a timetable. You’ve got a list of tasks needed to be completed within a period of one month (or less), along with the status of each task, the person-in-charge, progress, etc.
+
+It all starts with the Product Owner presenting a list of items or activities that have to be prioritised. The entire scrum team then analyses the list, figure out what they can do, and then create a plan to execute it. Just as the Sprint gives the team a high-level view of what should be done in order to achieve the Sprint goal, the backlog provides them with a detailed view of what needs to be done on a daily basis. It serves not only as a guide but also a measure of how far they’ve accomplished, with the time-boxed period as an important consideration.
+
+Sprint Backlog Planning (see link:#sprint-planning[+++Sprint Planning+++])
+
+Building an effective sprint backlog starts with planning which is usually done during the Sprint meeting. In the planning phase, the Scrum team selects product backlog items, in the sprint. Once those items have been selected, the team goes on to plan how they will go about the work. It doesn’t have to be a thorough and very detailed plan. However, it should reflect the key steps to take as well as the hours to be allocated to each item. This is a great way for the agile team to know if they are spending too much or less time on each task. A good team will think of most things during a sprint backlog. But it is impossible to have everything covered because as they start working, things change and the team might discover things that have to be revised or added.
+
+Daily Assessment & Plan Revisit
+
+Members of the Scrum team meet daily for what is often called the ‘scrum stand-up’. This is a good chance to get in sync and ensure that everyone is on track as to their product backlog items. Successful agile teams take advantage of their daily meetups (which should not be more than 15 minutes) to measure progress and deliverables.
+
+Management of the Sprint Backlog
+
+The Development Team takes charge of managing the sprint backlog. The Product Owner has to ensure an open communication with the team, check on everyone’s progress, set expectations, and discuss possible solutions to issues. Take note however that once the sprint backlog is created, no one in the team can remove items. Your team may add items but not remove them. Only the Product Owner can do it once he determined that a specific item no longer provides value to the sprint goal.
+
+Capacity Planning
+
+Capacity planning is a critical part of creating a sprint backlog. The Scrum Master should be able to identify how much time (on a daily basis) has to be allotted and whether there are enough people to cross out the items from the to-do list. Ideally, team members should render 6 hours of work each day. But adjustments and forecasts need to be made early on in case there are issues with team members’ availability.
+
+Tracking the Sprint Backlog
+
+There are various strategies to track sprint backlog. The most commonly used tool is the sprint burndown chart which is a graphic representation of the rate at each work is being done and how much work still needs to be done. This chart is aimed at making the work visible to the Scrum team. It enables everyone to see the available number of hours and the actual work remaining. The sprint backlog can also be tracked in a spreadsheet or much better, using a dedicated project management software.
+
+Behind every successful sprint is a well-established product backlog. A well-organised agile backlog does not only make the release and iteration planning easier. It also gives the Scrum team a clear overview of what needs to be done, at a specific timeframe, to get to the Sprint goal. Now that you know the importance of a sprint backlog and how to create one, you can be confident that your agile team is all geared towards success. Again, the sprint backlog must be clearly written and organised, checked and updated on a daily basis, in order to be effective. Furthermore, there has to be enough capacity for all items to be carried out.
+
+=== Building a Product Roadmap 
+
+Agile projects can’t discard long term planning. A roadmap is every bit as important to an agile team as it is to a waterfall team because it provides context around the team's every-day work, and responds to shifts in the competitive landscape. An agile roadmap done right is easy to find and easy to understand. 
+
+Product owners use roadmaps to outline future product functionality and when new features will be released. When used in agile development, a roadmap provides crucial context for the team's everyday work, and should be responsive to shifts in the competitive landscape. Multiple agile teams may share a single product roadmap.
+
+=== Building a Sprint Roadmap
+
+A Sprint Roadmap is much like a product roadmap, except the items are at a story level rather than high level feature level, and the timeline granularity is sprint boundaries rather than calendar quarters. Also, and this is very important to consider and communicate, the items in the Sprint Roadmap are allowed to be un-estimated and un-sized.
+
+Using the Sprint Roadmap as a worksheet to force the conversation around prioritization and MVP between the Product Owners and the Development leadership is a great way to do this.
+
+The sooner you all get to the table to talk about it, the sooner you can start having a productive conversation about prioritization and minimum viable product.
+
+[arabic, start=10]
+. {blank}
++
+=== Sprint Planning 
+[arabic]
+.. {blank}
++
+==== Overview
+
+The sprint planning meeting should provide structure, set expectations, and define the backlog for the upcoming sprint.
+
+The ScrumMaster: facilitates the sprint planning meeting and ensures that meeting rooms are booked, supplies are available, people are prepared, and all video conferencing and other connectivity details are ready to go. In terms of scheduling, the ScrumMaster should be timeboxing this meeting according to the length of the sprint. For example, if the team is working in 2-week sprints, the sprint planning meeting should between 2-4 hours. The ScrumMaster must manage time appropriately to make sure that there is complete alignment on the sprint goal before the meeting wraps up.
+
+The Product Owner: is responsible for ensuring that all items in the backlog are prepared before the meeting. They must clarify details on each backlog item and be a resource to the team when asking questions around use case or acceptance criteria. This is arguably the most important meeting for a Product Owner & one they must set aside plenty of time for to prepare.
+
+The Development Team: obviously, the people doing the work will need to be in the sprint planning meeting. Designers, developers, test engineers—anyone who will contribute to the work product—needs to be in attendance and actively participate in this meeting so that they can walk away with a solid understanding of what’s expected of them and what is priority to work on over the next sprint.
+
+Teams get better at sprint planning with time. If a team is newly formed (or new to agile), there may not be as much shared understanding on how much can get done within each sprint. Later, we’ll talk about calculating velocity. Just keep in mind that mature teams tend to do better at this. There’s an element of constant improvement with agile, so give yourself some grace if your first sprint planning meeting did not go as well as you had hoped!
+
+{empty}1. Bringing Definition - two major things are defined during sprint planning:
+
+* A sprint goal: this is a short (1-2 sentence) description of what the team is going to complete over the course of the sprint. The team writes it together and publishes it so that people can refer back to it at any time. The sprint goal is also a quick and easy statement for stakeholders to read and understand what the team is working on, without having to go into the weeds of the backlog. The sprint goal is the measuring stick used at the end of each sprint that helps answer the question: Was this last sprint successful? One example of a sprint goal could be: Build feature X to coincide with holiday launch (signaling that a feature delivery by a certain milestone is the main sprint goal).
++
+A sprint backlog: This is a list of the product backlog items that the team selects and commits to working on during the sprint. It also includes all the necessary tasks required to deliver the work. Each task should also be estimated.
+
+It’s easy for sprints to go off the rails without a shared understanding of what should be accomplished. The sprint planning meeting is your means to an end to get there.
+
+{empty}2. Brings alignment and Buy-In from the Team
+
+Keep in mind that it is a collaborative, team effort to arrive at the outputs you’ll have by the end of a sprint planning meeting. The team decides how much gets done during a sprint, not an overpowering Product Owner or an outside stakeholder. Your team members gain a sense of empowerment by taking charge of their flow of work. They also benefit from better alignment with others by having the time to talk about how their work will fit together over the next sprint.
+
+{empty}3. Provides a reference point for measuring velocity
+
+You should also run a sprint planning meeting if you know how much your team can accomplish during a sprint. This is commonly referred to as link:#team-velocity[+++velocity+++] and is established after a team has been working together for a bit.
+
+image:media/image16.png[image,width=337,height=642]
+
+==== Sprint Planning Preparation 
+
+Backlog prep
+
+In the weeks or days leading up to sprint planning, the Product Owner must ensure that all items in the backlog that could be considered for the sprint (features, bugs, optimizations, stakeholder feedback, etc.) meet the team’s definition of ready. This means that items are organized, dependencies identified or removed, test cases are written, acceptance criteria is listed, and all descriptions are set. Without this prep work, the sprint planning meeting is less efficient and more time-consuming for everyone.
+
+Measure user stories
+
+The Product Owner, with the help of the team, also needs to ensure that each user story is the right size, not too large or small, to be thoughtfully considered during sprint planning. The team will have a better idea of this the longer they work together.
+
+Examine the team’s commitment
+
+Take a look at the calendar for everyone’s availability. Are there holidays coming up? Will your lead dev be out on vacation? Have a good idea of how much time people will be available over the next sprint.
+
+Establish your velocity, or how you’ll measure it
+
+This is unique to every team. If you have an average amount of work that’s typically completed in each sprint, use that as your measuring stick of how much can get done while planning the sprint. If you’re working to establish this for a newly formed team, be sure to track how many story points are completed and accepted sprint over sprint.
+
+Gauge your capacity
+
+This is another measurement that’s related to the pieces above. If your team is not fully dedicated to one product – or might be pulled away to work on other things – be sure to take that into consideration when planning out the sprint.
+
+Create A Sprint Planning Meeting Agenda
+
+Create an agenda and distribute it to your team. You can save time by adapting this sprint planning template.
+
+==== During The Sprint Planning Meeting
+
+Leading Agile has a great sprint planning meeting agenda for the sprint planning process. We dive into a bit more detail and show you what the steps look like:
+
+Remind the team of the big picture or goal
+
+It’s critical to set the stage for the team and the meeting itself by articulating aspirations, goals, or visions for the project. Everyone is working hard for a reason.
+
+Discuss any new information that may impact the plan
+
+Chances are, the ScrumMaster, Product Owner, or other team member has received updates from outside stakeholders since the last time the team planned a sprint. It’s important to review any new information from the market or customers that help to set context for what the upcoming sprint will look like.
+
+Present the velocity to be used for this release
+
+Make sure the team is aware of current velocity so they can be informed as they select stories to attack over the next sprint. It’s always easier to have this in the back of your head instead of relying on a gut feeling.
+
+Confirm team capacity
+
+Vacations, holidays, competing projects. All of these should be addressed so the team has an accurate idea of how much dedication they’ll have to this sprint.
+
+Confirm any currently known issues and concerns and record as appropriate
+
+The team likely has feedback on things they’ve run into when completing the past sprint. These could be reasons why they couldn’t complete some stories or a new update that threw a wrench in the plan. Stuff happens! Be sure to address these with the team at large.
+
+Review the definition of DONE and make any appropriate updates based on technology, skill, or team member changes since the last sprint
+
+The only way someone knows if something is complete is if there is a clear description of what “done” means. Give the team what they need to grade their completion! Also, team members may have been moved around or added since the last sprint. Address this and make changes accordingly.
+
+Present product backlog items to consider for the sprint backlog
+
+Now the team can review the proposed backlog. These were prepared by the Product Owner and organized by value. It should be roughly the size of two sprint’s worth of work, just in case the team has questions about how this work will relate to future work.
+
+Determine the needs, sign up for work, and estimate the work owned
+
+This is where the true collaboration and negotiation comes in. Let the team review each item to see who will own what. If items are not estimated already, estimate them to get a sense of how many can be selected for a sprint. As a ScrumMaster, make sure you have an eye on the clock.
+
+Product Owner answers clarifying questions and elaborates acceptance criteria
+
+As you go through each item in the backlog, the team will need to discuss and ask questions. The Product Owner is the one who should serve as a resource to the team. The goal is to identify exactly what each person is working on and how they are going to get the work done.
+
+Confirm any new issues and concerns raised during meeting and record
+
+If anything else came up during sprint planning that wasn’t already on the radar, find a space to record those and identify action items.
+
+Confirm any assumptions or dependencies discovered during planning and record
+
+Similarly, the ScrumMaster should be noting any other related impacts that may arise from the sprint plan getting put together. This could have a result on a later sprint.
+
+ScrumMaster calls for a group consensus on the plan
+
+Once the sprint backlog has been identified, the ScrumMaster asks the whole group if they are aligned on the plan. Review it against your current velocity and capacity. Review it against the overall product vision. Ask every person if they’re comfortable with it.
+
+Team and Product Owner signal if this is the best plan, they can make given what they know right now
+
+Hopefully, everyone is aligned and feels confident they can deliver that chunk of work based on what they know today. Inevitably, things will change, but if the team feels confident in accomplishing the sprint goal, your work there is done (for now).
+
+✏️ Note: the length of sprint planning is typically a function of how long the team’s sprints are. As a general rule of thumb, one should multiply the number of weeks in the sprint by two hours to get the total sprint planning meeting length, for a one month or four-week sprint this meeting should last eight hours. For a two-week sprint, plan for about four hours.
+
+=== Team velocity 
+
+Velocity is a measure of the amount of work a Team can tackle during a single Sprint and is the key metric in Scrum. It’s calculated at the end of a sprint by adding up all of the completed user story point estimations and averaged out over the course of several sprints.
+
+For example, if in Sprint 1 the team completed 25 story points, in Sprint 2 they completed 35, and in Sprint 3 they completed 30, the velocity would be 30. 25 + 35 + 30 = 90/3 = 30.
+
+Moving forward, the scrum team would know that, on average, they complete 30 story points per sprint and could use this as a guide when going through the backlog items in sprint planning. As mentioned above, the team decides what they want to bite off each sprint, so if they want to shoot for 40 story points, and everyone agrees, the sprint backlog could add up to more story points than their velocity. The inverse could also be true.
+
+Velocity will ebb and flow over time, but a mature agile team’s velocity will start to trend upward as they get more and more used to working together and on the product. Velocity is a key number for the Product Owner to keep in mind as they work to figure out how many sprints it will take to release the next version of the product.
+
+=== Using a burndown chart 
+
+A burndown chart is a graphic representation of how quickly the team is working through a customer’s user stories, an agile tool that is used to capture a description of a feature from an end-user perspective. The burndown chart shows the total effort against the amount of work for each iteration.
+
+The quantity of work remaining is shown on a vertical axis, while the time that has passed since beginning the project is placed horizontally on the chart, which shows the past and the future. The burndown chart is displayed so everyone on the team can see it and is updated regularly to keep it accurate.
+
+image:media/image17.tif[image,width=321,height=131]
+
+=== Daily Scrum
+
+Ideally, a daily scrum meeting is held in the morning, as it helps set the context for the coming day's work. These scrum meetings are strictly time-boxed to 15 minutes.
+
+All team members are required to attend scrum meetings. Since both the Scrum Master and product owner are committed team members, they are expected to attend and participate. Anyone else (for example, a departmental VP, a salesperson or a developer from another project) is allowed to attend, but is there only to listen. This makes scrum meetings an excellent way for a Scrum team to disseminate information -- if you're interested in hearing where things are at, attend that day's meeting.
+
+The daily scrum meeting is not used as a problem-solving or issue resolution meeting. Issues that are raised are taken offline and usually dealt with by the relevant subgroup immediately after the meeting. During the daily scrum, each team member answers the following three questions:
+
+What did you do yesterday?
+
+What will you do today?
+
+Are there any impediments in your way?
+
+By focusing on what each person accomplished yesterday and will accomplish today, the team gains an excellent understanding of what work has been done and what work remains. The daily scrum meeting is not a status update meeting in which a boss is collecting information about who is behind schedule. Rather, it is a meeting in which team members make commitments to each other.
+
+If a programmer stands up and says, "Today, I will finish the data storage module," everyone knows that in tomorrow's meeting, he will say whether or not he finished. This has the wonderful effect of helping a team realize the significance of these commitments, and that their commitments are to one another, not to some far-off customer or salesman.
+
+=== Sprint review
+
+The sprint review is an informal meeting which the development team, the scrum master, the product owner and the stakeholders will attend. The team gives a demo on the product and will determine what are finished and what aren’t. The purpose of the Sprint Review meeting is for the team to:
+
+Show the customers and stakeholders the work they have accomplished over the sprint
+
+Compare it to the commitment given at the beginning of the sprint
+
+Get feedback
+
+✏️ Note: the sprint review should take no more than one hour per week of sprint duration.
+
+=== Closing a Sprint: a sprint retrospective 
+
+The Sprint Retrospective occurs after the Sprint Review and prior to the next Sprint Planning. This is at most a three-hour meeting for one-month Sprints. For shorter Sprints, the event is usually shorter. The Scrum Master ensures that the event takes place and that attendants understand its purpose. This is the opportunity for the Scrum Team to improve and all member should be in attendance.
+
+During the Sprint Retrospective, the team discusses:
+
+What went well in the Sprint
+
+What could be improved
+
+What will we commit to improve in the next Sprint
+
+The Scrum Master encourages the Scrum Team to improve its development process and practices to make it more effective and enjoyable for the next Sprint. During each Sprint Retrospective, the Scrum Team plans ways to increase product quality by improving work processes or adapting the definition of “Done” if appropriate and not in conflict with product or organizational standards.
+
+By the end of the Sprint Retrospective, the Scrum Team should have identified improvements that it will implement in the next Sprint. Implementing these improvements in the next Sprint is the adaptation to the inspection of the Scrum Team itself. Although improvements may be implemented at any time, the Sprint Retrospective provides a formal opportunity to focus on inspection and adaptation.
+
+=== Pert estimation technique
+
+When estimating time to complete a task proves difficult, using the PERT estimating technique can be useful.
+
+There are three estimation times involved in PERT:
+
+Optimistic Time Estimate (TOPT),
+
+Most Likely Time Estimate (TLIKELY),
+
+Pessimistic Time Estimate (TPESS).
+
+The expected completion time (E) is calculated as: E = (TOPT + 4 x TLIEKLY + TPESS) / 6
+
+image:media/image18.png[image,width=95,height=106]image:media/image19.png[image,width=191,height=201]image:media/image20.png[image,width=158,height=27]image:media/image21.jpeg[image,width=244,height=65]
+
+image:media/image18.png[image,width=95,height=106]image:media/image19.png[image,width=191,height=201]image:media/image20.png[image,width=158,height=27]image:media/image21.jpeg[image,width=244,height=65]
+
+image:media/image1.jpg[image,width=91,height=102]image:media/image18.png[image,width=95,height=106]image:media/image19.png[image,width=191,height=201]image:media/image20.png[image,width=158,height=27]image:media/image21.jpeg[image,width=244,height=65]
+
+image:media/image22.jpg[image,width=182,height=48]

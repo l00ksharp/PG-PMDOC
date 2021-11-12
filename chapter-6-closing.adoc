@@ -1,0 +1,115 @@
+
+== Closing a project
+
+The closing processes are used to formally establish that the project phase or project is finished, and to provide lessons learned to be considered and implemented as necessary.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* UAT
+* Project plan
+
+a|
+* Phase closure report / Sprint retrospective
+* Post project analysis
+* Post project task list
+
+|===
+
+=== Overview
+
+image:media/image15.png[Une image contenant texte Description générée automatiquement,width=642,height=361]
+
+[width="99%",cols="8%,8%,69%,7%,8%",options="header",]
+|===
+|Step |Who |What |Type |Scale
+|*1* |PM |The PM closes the current project phase / sprint or the entire project |O |All
+|*2* |PM |The PM collects the lessons learned for future reference |O |All
+|===
+
+[arabic]
+. {blank}
++
+==== Hints / Tips
++
+Are the users satisfied with how the project was handled?
++
+Are the users satisfied with the final product?
++
+Does the final product meet the quality criteria?
++
+Does the final product implement all the initial requirements?
++
+Will the maintenance of the final product be simple?
++
+Did the project produce cascading issues?
++
+Are the benefits of the final product measurable/visible?
++
+Is the vision shared with the key users contributing to the project?
+. {blank}
++
+==== Related documents and forms 
++
+Post project analysis
++
+Post project task list
+
+[arabic, start=2]
+. {blank}
++
+=== Subprocesses
+[arabic]
+.. {blank}
++
+==== Closing a work package or a project
+
+The completion of all processes and activities should be verified to ensure that the deliverables of the project phase or project were provided and specific project management processes were either completed or terminated prior to completion. All project documents should be collected and archived in accordance with the prevailing standards and all project personnel and other resources should be released.
+
+A project may need to be terminated prior to completion, if customers no longer require the project deliverables or if it becomes obvious that some or all of the objectives cannot be met. Unless special grounds exist, terminating a project should comprise the same activities as closing a project, even though there may not be a deliverable to release to the customers. All the documentation for a terminated project should be collected and archived in accordance with organizational requirements.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input(s) |Output(s)
+a|
+* Progress report
+* Project completion report
+* Contract documentation
+
+a|
+* Project work package or project closure report / sprint retrospective
+* Released resources
+* Completed procurement
+
+|===
+
+✏️ Note: in agile project closing a sprint is performed through a link:#sprint-review[+++Sprint review+++] and link:#closing-a-sprint-a-sprint-retrospective[+++Sprint retrospective meeting+++].
+
+==== Collect lessons learned
+
+Collecting lessons learned is useful to evaluate the project and collect experiences, in order to benefit current and future projects.
+
+Throughout the project, the project team and key stakeholders identify lessons learned concerning the technical, managerial and process aspects of the project. The lessons learned should be captured, compiled, formalized, stored, disseminated and used throughout the project. Therefore, at some level lessons learned may be outputs of every project management process and may result in updated project plans.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Progress reports
+* Approved changes
+* Lessons learned
+* Issues log
+* Risk register
+
+a|
+* Lessons learned document
+
+|===
+
+✏️ Note: in agile project the link:#closing-a-sprint-a-sprint-retrospective[+++Sprint retrospective meeting+++] is used to collect lessons learned.
+
+[arabic, start=10]
+. {blank}
++

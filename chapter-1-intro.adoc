@@ -1,0 +1,350 @@
+== Introduction
+=== Foreword
+The current document can be used as a tactical standard and guidelines for project management. It is based on ISO 21500 and Scrum practices.
+
+=== Processes description
+ISO 21500 is a process-oriented project management framework. Some (macro)processes are described using a simplified BPMN notation (more on BMNP can be found on https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation[+++Wikipedia+++] or the http://www.bpmn.org[+++BPMN+++] pages of the Object Management Group).
+
+In a nutshell, the process description uses the following notation:
+
+
+Processes are sometimes described step by step using the following table template:
+
+[width="100%",cols="10%,11%,54%,7%,18%",options="header",]
+|===
+|Step |Who |What |Type |Scale
+|0 | | | |
+|===
+
+* **Step 0**: refers to the triggering event of the process
+* **Who**: is the main actor performing the action described in the What cell
+* **What**: the action performed
+* **Type**: describes if the element described in the **What** section is
+** Linked to an (I)nput or an (O)utput;
+** Linked to a (C)ontrol or a (D)ecision;
+* Scale indicates if the action is suitable for (All) project sizes or (S)mall, (M)edium, or (L)arge ones.
+
+== Some definitions
+=== What is a project
+A project can be seen as a temporary organization that aims to create a unique product, service or result.
+
+A project is a set of coordinated activities undertaken to meet a defined business case within a set timeframe and an allocated budget. In practice, the project is geared towards the end goal, it must be adaptable to frequent modifications, but changes must be managed and planned. The project must remain dynamic and continuously balance technical, cost and time constraints.
+
+=== Main project’s components
+Here are the main components of a project:
+
+[width="100%",cols="17%,83%",options="header",]
+|===
+|Component |Definition
+|*Requirement* a|
+A requirement is an autonomous and necessary project’s need, shared by the different contributors of the project, justified by a business or technical context. The effort necessary to implement a requirement should not exceed 10 days (otherwise the requirement is split into several requirements).
+
+Setting up an effort limit to a requirement is a good practice. However, in early phases of the project (pre-project), defining high level requirements that exceeds 10 days is possible.
+
+|*Scope* |Identify and define the work and deliverables, and only the work and deliverables required (sum of the requirements).
+|*Constraints* |Limits imposed on the project or during production. The constraints can be expressed at the level: regulatory, legal, deadlines, resources, budget, software architecture, computation, response time, …
+|*Deliverables* |Any component materializing the result of an implementation service (document, letter, software code, module, test files, …)
+|*Time and deadline* |Time of completion of an action;
+|*Planning* |Planning: organization of the production plan of the project actions within a given deadline (generally linked to the production of deliverables)
+|*Milestones* |Key deadline of the project
+|*Resource* |Identification of resources (human or non-human) is required for the project’s implementation
+|*Effort* |Quantification of time required for a resource (or a group) of resource to complete a task or produce a deliverable
+|*Budget / Costs* |A detailed list of all the project’s costs
+|*Risks* |Identification, evaluation, prioritization and definition of palliative solutions to the occurrence of an event that could disrupt the smooth running of the project
+|*Change management* |Changing of key elements of the project during the project’s execution (perimeters, delays, budget, resources, ...)
+|*Governance* |Definition of the instances and roles necessary to follow up a project
+|*Reporting* |Production of a periodic deliverable: an inventory and progress of the project (actions, planning, risks, costs, deadlines, quality of the deliverables, …)
+|*Procurement* |Processes required to plan and acquire products, services or results, and to manage supplier relationships
+|*Communication* |Processes required to plan, manage and distribute information relevant to the project
+|===
+
+Most components can be organized in the following way:
+
+
+
+The risk level of the project will influence the governance, change management processes and reporting levels.
+
+=== What is project management 
+
+Project management is a temporary set of processes with a beginning and an end, which mobilizes identified resources (human, material, equipment, raw materials, informational and financial) during its realization, which has a cost and is therefore the object of a budgeting.
+
+=== Project’s phases
+
+A project mainly goes through three major phases:
+* *Initiating*: where the project limits, constraints, content and activities are defined;
+* *Implementing*: where the project activities are performed;
+* *Closing*: where the project is released and handed over.
+
+All phases are supervised by project the following management processes:
+* *Planning*: structured project activities assigned to resources;
+* *Controlling*: monitor, measure and control project performance against the project plan.
+
+The implementing phase is usually divided in 4 sub-processes:
+* *Design*: production of all organizational, functional and technical deliverables for the implementation of the project;
+* *Build*: implementation of the elements defined in the design phase, often programming activities and / or software parameterization;
+* *Test*: acceptance of the solution, as well as it’s working ecosystem
+* *Release*: the outcome of the project (or a subset of the project) is made available to its final users.
+
+=== Traditional (Waterfall, V Cycle)
+In a traditional project approach, all processes are orchestrated sequentially. The "waterfall" model represents this approach where each step needs to be completed before moving on to the next one. The waterfall model has evolved towards the “V cycle”, which allows some optimizations. In addition, the project is often split into lots in order to avoid a tunnel effect. The lots are often (weakly) parallelized.
+
+Waterfall and v-Cycle emphasis is on:
+* Detailed planning;
+* Requirement's control;
+* Predictability.
+
+V-Cycle is still very popular for large projects, as it delivers a good level of predictability when the project’s perimeter is stable enough - and therefore is preferred by upper management. However, these approaches deal poorly when changes occur during the project. Each time a change occurs, one has to go upwards in the phase sequence and execute it again: Planning > Designing > Building … A work around solution is to split the project into smaller increments (lots) in order to limit the effect of the re-execution of the phases sequence. Splitting the project into lots also reduces the tunnel effect (time to wait before actually see something working) and reduces the risk that the end users receive a product quite different from what they were expecting.
+
+==== Roles 
+
+Here are the most common project roles in a traditional approach:
+
+[width="100%",cols="16%,29%,55%",options="header",]
+|===
+|Abbreviation |Role |Responsibilities
+|*SPO* |Sponsor a|
+* Has ultimate authority and responsibility for a project or program
+* Approves changes
+* Provides additional funds for changes
+|*SKH* |Stakeholder |Community member affected by or participating in the project
+|*PM* |Project Manager |The project manager coordinates the project activities and provides follow-up feed-back to the governing instances and the project team
+|*PMO* |Project Management Officer |While the PM works at project level, while the PMO generally works at company level, managing a portfolio of projects. The PM may consult the PMO for assistance
+|*TL* |Team leader |The team leader is in charge of coordinating a team (users, developers, …) and reports on the activities of the team
+|*BA* |Business Analyst |Has business knowledge, assesses / documents business needs, test cases - participates in the testing phase of the solution
+|*DEV* |Developer a|
+* Writes technical specifications when necessary
+* Designs application software components, including programs, modules, and run unitary tests
+
+Depending on the organization the developer team might be supported by a https://en.wikipedia.org/wiki/Software_architect[+++software architect+++] (coding standards, reusable components, design patterns, …), and/or a https://en.wikipedia.org/wiki/Chief_technology_officer[+++CTO+++] (Technologies, architecture, ...) and of course by the https://en.wikipedia.org/wiki/Chief_information_officer[+++CIO+++] (Risks, budget, resource allocation, …)
+
+|*USR* |End User |Business end user of the solution
+|*PROD* |Production |The project is generally handed over the production team during the closing phase. The production team handles day to day performance and processes of the solution
+|*MNT* |Maintenance |The maintenance team is in charge of providing bug fixing and light evolutions once the project is in production
+|===
+
+==== Governance 
+
+The main governing instances of a project are following:
+
+[width="100%",cols="21%,18%,13%,13%,35%",options="header",]
+|===
+|Name |Goal |Attendees |Periodicity |Deliverables
+|*Follow-up Committee* |Give visibility on the status and forecast of the project, resolve issues |CP, BA, DEV |Weekly a|
+* Weekly Progress report
+* Updated project and resource plan
+* Meeting minutes
+
+|*Steering Committee* a|
+* Provides companywide leadership in support of the projects and project portfolio
+* Gives visibility on the status and forecast of the project portfolio – live projects
+* Resolves issues escalated by the project manager
+* Resolves or forwards policy issues to appropriate decision-making bodies
+* Gives a go on new projects
+* Gives a go if a live project needs additional resources or budget
+* Sets the priorities between projects
+
+|SPO, SKH, PMO, PM |Monthly a|
+* Monthly Progress report
+* Updated project and resource plan
+* Arbitration documents
+* Meeting minutes
+|===
+
+
+NOTE: Periodicity, attendees might vary depending on the company’s organization and risk level of the project. Ad- hoc meeting can also occur at team or executive level.
+
+=== Agile
+An Agile project advocates a more adaptive, incremental and evolutionary approach, that embracing changes. The project is run through small time boxes (called sprints), its main philosophy is to release early and release often. End users need to be very involved in the project from the beginning and for the duration of the project. Agile principles were described in the https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto[+++Agile Manifesto+++] and its processes were described in various method, a popular one being : https://en.wikipedia.org/wiki/Scrum_(software_development)[+++SCRUM+++].
+
+In an agile project, releases are time boxed into sprints,a sprint duration usually does not exceed 30 days.
+It uses a slightly different vocabulary, the list of requirements becomes the product backlog, at each new cycle, elements are selected for implementation from the product backlog into the sprint backlog.
+
+An Agile project approach, is no just about sequencing project phases, it’s a project philosophy:
+
+* Customer satisfaction by early and continuous delivery of valuable software
+* Welcome changing requirements, even in late development
+* Deliver working software frequently (weeks rather than months)
+* Close, daily cooperation between business people and developers
+* Projects are built around motivated individuals, who should be trusted
+* Face-to-face conversation is the best form of communication (co-location)
+* Working software is the primary measure of progress
+* Sustainable development, able to maintain a constant pace
+* Continuous attention to technical excellence and good design
+* Simplicity — the art of maximizing the amount of work not done — is essential
+* Best architectures, requirements, and designs emerge from self-organizing teams
+* Regularly, the team reflects on how to become more effective, and adjusts accordingly
+
+Some other differences between Waterfalls / V-Cycle and Agile project approaches for software development concerns:
+
+* **Testing**: waterfall / V-Cycle models separate the testing phase from the build phase. In agile software development testing is completed in the same iteration as programming using https://en.wikipedia.org/wiki/Test-driven_development[+++Test-Driven Development+++]
+* **Documentation**: only useful and just enough documentation should be produced, avoiding bureaucracy. Usually Agile (or Lean) documentation uses Wiki, https://en.wikipedia.org/wiki/Kanban[+++Kanban+++] and specialised tools rather than word processors. Code should be well documented. Therefore, Agile project do produce documentation, but only strictly useful elements.
+
+The emphasis of the agile approach is on:
+
+* Creativity and innovation;
+* Solution adaptivity;
+* Flexible planning.
+
+The Agile approach offers relatively less predictability than the traditional approach. But it can reduce wasted time, shortening the lines of communication and encouraging collaboration.
+
+==== Roles 
+
+Here are the main roles of an Agile project, the number of roles is voluntarily low to facilitate team communication:
+
+[width="100%",cols="18%,27%,55%",options="header",]
+|===
+|Abbreviation |Role |Responsibilities
+|*SKH* |Stakeholder |Community member affected by or participating in the project.
+|*PO* |Product Owner |Represents the product's stakeholders and the voice of the end user. The PO is accountable for the product backlog and for maximizing the value that the team delivers. In essence, the PO role is close to the Project Manager in a traditional approach.
+|*TL* |Team Leader / Scrum Master |Acts as a buffer between the team and any distracting influences
+|*TM* |Team Member a|
+Is responsible for the creation and delivery of a solution /service. This includes modeling, programming, testing, and release activities, as well as others.
+
+Team members can be supported by business users, Software Architect, CTO, CIO, …
+
+|===
+
+==== Governance
+
+[width="100%",cols="18%,40%,12%,13%,17%",options="header",]
+|===
+|Name |Goal |Attendees |Periodicity |Deliverables
+|link:#daily-scrum[+++Daily scrum+++] a|
+team’s chance to get together, define a plan for the day’s work, and identify any blockers.
+
+During the daily scrum, each member should briefly answer the following questions:
+
+* What did you do yesterday?
+* What will you do today?
+* Are there any impediments in the way?
+a|
+TL, TM,
+PO when needed
+
+|Daily |Sprint backlog
+|link:#creating-a-sprint-backlog[+++Sprint planning+++] |Review the product backlog, define the sprint goal and backlog |PO, TL, TM |Before each sprint a|
+* Sprint backlog
+* Product backlog
+* User stories
+
+|link:#sprint-review[+++Sprint review+++] |Showcase the Sprint completed work elements to the Stakeholders |SKH, PO, TL, TM |End of each sprint a|
+* Sprint deliverables
+* Team Velocity
+* Product backlog
+* Sprint backlog
+* Burn down chart
+* Meeting minute
+
+|link:#closing-a-sprint-a-sprint-retrospective[+++Sprint retrospective+++] |Look back on the work that was just completed and identify items that could be improved a|
+TL, TM,PO when needed
+
+|End of each sprint |Meeting minute
+|===
+
+NOTE: more information about Scrum here: https://www.scrumguides.org
+
+=== Hybrid
+As seen above traditional project approach is all about being predictive while agile approach is about being adaptative, thus lacking predictability. Agile approach is not always well understood by the upper management and requires a team that has a good level of maturity regarding project processes, as well as user’s availability.
+
+Hybrid approach, uses a mix of traditional and agile practices. There is no clear Hybrid project phase sequencing has it depends on the project needs. What usually occurs is that initiating / planning and closing phases are performed in a traditional way including the controlling processes and governance instances, while the implementing phase is performed using Agile practices.
+
+Using this type of approach facilitates the dialog with upper management by providing a high-level planning and project follow-up documentation they are used to, while facilitating some last-minute changes during the implementation phase.
+
+==== Roles and governance 
+Roles and governance can be a mix of traditional approach, usually the Project Manager take the role of the product owner. Hybrid project uses the following instances:
+
+* Daily scrum
+* Sprint planning
+* Project follow-up committee
+* Steering committee
+
+=== Which approach for which kind of projects
+Choosing the proper project approach depends on several factors, here are the most commons ones:
+
+* Functional perimeter stability
+* User availability (frequent deliveries)
+* Project culture maturity
+* Technologies
+* Project size
+* Risk level
+
+On approach might be more suited depending of the project environment, size and risks.
+
+image:media/image9.png[image,width=642,height=170]
+
+=== Project Sizes
+
+Three project sizes are preset as following:
+
+* **Small projects**: <=200 days
+* **Medium projects** >200 days and <=500 days
+* **Large projects**: >500 days
+
+NOTE: Project sizes might differ depending on the company’s standards
+
+=== ISO 21500 Proceses and subjects' groups
+The following table shows ISO21500 subprocesses by groups and related subjects
+
+[width="99%",cols="19%,17%,16%,16%,16%,16%",options="header",]
+|===
+| |Initiating |Planning |Implementing |Controlling |Closing
+|*Integration* |Develop project charter |Develop project plans |Direct project work a|
+Control project work
+
+Control Changes
+
+a|
+Close project phase or entire project
+
+Collect lessons learned
+
+|*Stakeholder* |Identify stakeholder | |Manage stakeholders | |
+|*Scope* | a|
+Define Scope
+
+Create WBS
+
+Define activities
+
+| |Control scope |
+|*Resource* |Establish project team a|
+Estimate resources
+
+Define project organization
+
+|Develop project team a|
+Control resources
+
+Manage project team
+
+|
+|*Time* | a|
+Sequence activities
+
+Estimate activity duration
+
+Develop schedule
+
+| |Control schedule |
+|*Cost* | a|
+Estimate costs
+
+Develop budget
+
+| |Control costs |
+|*Risk* | a|
+Identify risks
+
+Assess risks
+
+|Treat risks |Control risks |
+|*Quality* | |Plan Quality |Perform quality assurance |Perform quality controls |
+|*Procurement* | |Plan procurement |Select suppliers |Administer procurement |
+|*Communication* | |Plan communications |Distribute information |Manage communication |
+|===
+
+The management of a project starts with the initiating process group and finishes with the closing process group. The interdependency between process groups requires the controlling process group to interact with every other process group as shown below. Process groups are seldom discrete or one-time in their application.
+
+The process groups are normally repeated within each project phase to drive the project to completion. All or some of the processes within the process groups may be required for a project phase. Not all interactions shown below will apply to all project phases or projects. In practice, the processes within the process groups are often concurrent, overlapping and interacting in ways that are not complex to show.
+
+image:media/image10.png[image,width=515,height=274]

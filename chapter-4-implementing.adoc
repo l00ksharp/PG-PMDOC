@@ -1,0 +1,249 @@
+
+== Implementing a project
+
+The implementing processes are used to perform the project management activities and to support the provision of the project’s deliverables in accordance with the project plans.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project Charter
+* Project Plan
+
+|Project deliverables
+|===
+
+=== Overview
+
+image:media/image13.png[Une image contenant texte Description générée automatiquement,width=642,height=361]
+
+[width="99%",cols="8%,8%,69%,7%,8%",options="header",]
+|===
+|Step |Who |What |Type |Scale
+|1 |PM a|
+The PM authorises the start of a link:#direct-project-work[+++project work package+++], doing so the PM might need to :
+
+* link:#develop-project-team[+++Develop Project’s Team+++]
+* link:#manage-stakeholders[+++Manage stakeholders+++]
+* link:#select-suppliers[+++Select Suppliers+++]
+* link:#treat-risks[+++Treat Risks+++]
+* link:#distribute-information[+++Distribute information+++]
+
+|D |All
+|2 |PM a|
+Upon completion of the work package, the PM controls the deliverables, doing so the PM might need to:
+
+* link:#manage-stakeholders[+++Manage stakeholders+++]
+* link:#treat-risks[+++Treat Risks+++]
+* link:#perform-quality-assurance[+++Perform quality insurance+++]
+* link:#distribute-information[+++Distribute information+++]
+
+|C |All
+|3 |PM a|
+The PM controls if changes occurred to the scope of the next work package
+
+* link:#control-changes[+++Control changes+++]
+* link:#treat-risks[+++Treat Risks+++]
+* link:#distribute-information[+++Distribute information+++]
+
+|C |All
+|===
+
+[arabic]
+. {blank}
++
+==== Hints / Tips
++
+Are the specifications understood by the DEV team?
++
+Is the functional scope stable enough?
++
+Are the underlying technologies stable, documented, supported (libraries, frameworks)? 
++
+Coding standards are described and used (for software)?
++
+Unit codes or Test-driven development practices are in place?
+. {blank}
++
+==== Related documents and forms 
++
+Coding standards
++
+Requirements list / User stories and Epics
++
+Functional specifications
++
+Technical specifications
++
+Unit test report
++
+Release note 
+
+[arabic]
+. {blank}
++
+=== Subprocesses
+[arabic]
+.. {blank}
++
+==== Direct project work 
+
+The purpose of Direct project work is to manage the performance of the work as defined in the project plans, in order to provide the approved project deliverables. Direct project work is the management interface between the project sponsor, project manager, project management team and project team, which enables the work performed by the project team to be integrated into subsequent project work or the final project deliverables.
+
+The project manager should direct the performance of the planned project activities and manage the various technical, administrative and organizational interfaces within the project.
+
+The deliverables are the result of the integrated processes performed as defined in the project plans. Information on the status of the deliverables is collected as part of link:#distribute-information[+++Distributing Information+++].
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plan
+* Approved changes
+
+a|
+* Progress data
+* Issues log
+* Lessons learned
+
+|===
+
+==== Manage Stakeholders
+
+The purpose of Manage stakeholders is to give appropriate understanding and attention to stakeholders’ needs and expectations. This process includes activities such as identifying stakeholder concerns and resolving issues.
+
+Diplomacy and tact are essential when negotiating with stakeholders. When it is not possible for the project manager to resolve stakeholder issues, it may be necessary to escalate the issues to a higher authority, in accordance with the project organization, or to elicit the assistance of external individuals.
+
+A detailed analysis should be made of stakeholders and of the impacts they might have on the project, so that the project manager can take maximum advantage of their contribution to the project. From this process, prioritized stakeholder management plans may be developed.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plan
+* Stakeholder register
+
+a|
+* Change requests
+
+|===
+
+==== Develop project team
+
+The purpose of Develop project team is to improve the performance and interaction of team members in a continuing manner. This process should enhance team motivation and performance.
+
+This process depends on the competencies of the project team (see also link:#establish-the-project-team[+++Establish Project Team+++]). Ground rules of acceptable behavior should be established early in the project to minimize misunderstandings and conflicts.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Staff assignments
+* Resource availability
+* Resource plan
+* Role descriptions
+
+a|
+* Team performance
+* Team appraisals
+
+|===
+
+==== Treat risks 
+
+The purpose of Treat risks is to develop options and determine actions to enhance opportunities and reduce threats to project objectives.
+
+This process addresses risks by inserting resources and activities into the budget and schedule. Risk treatment should be appropriate to the risk, cost-effective, timely, realistic within the project context, understood by all parties involved and assigned to an appropriate person.
+
+Risk treatment includes measures to avoid the risk, to mitigate the risk, to deflect the risk or to develop contingency plans to be used if the risk occurs.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plan
+* Risk register
+
+a|
+* Risk responses
+* Change request
+
+|===
+
+==== Perform quality assurance
+
+The purpose of Perform quality assurance is to review the deliverables and the project. It includes all processes, tools, procedures, techniques and resources necessary to meet quality requirements.
+
+This process includes the following:
+
+ensuring objectives and relevant standards to be achieved are communicated, understood, accepted and adhered to by the appropriate project organization members;
+
+executing the quality plan as the project progresses;
+
+ensuring that the established tools, procedures, techniques and resources are being used.
+
+Quality assurance permits conformance to applicable performance requirements and standards.
+
+Quality assurance audits may be performed outside the project boundaries by other parts of the performing organization or by the customers. Audits determine the performance of the quality process, quality control and the need for recommended action or change requests.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Quality plan
+
+a|
+* Change request
+
+|===
+
+✏️ Note : link:#common-project-kpi[+++common project KPI+++] can be used to setup and measure quality.
+
+==== Select suppliers
+
+The purpose of Select suppliers is as follows:
+
+to ensure that information is obtained from suppliers so that there is consistent evaluation of proposals against stated requirements;
+
+to review and examine all the submitted information;
+
+to select the suppliers.
+
+The request for information, proposal, bid, offer or quotation, each of which serves different purposes, should be unambiguous, in order to ensure that the information obtained in response to the specific type of request meets the needs of the customers and complies with applicable legal and regulatory requirements. The request should include a full description of the documents to be provided, such as scope, format, quality and quantity of these documents, as well as their purpose and the date by which they should be submitted. When proposals are requested, the submitted documentation should provide sufficient information for a supplier to be selected.
+
+An evaluation of each supplier’s offer should be undertaken in accordance with the chosen evaluation criteria. The final selection should be made based on what is considered to be the most appropriate and beneficial offer with reference to the evaluation criteria. There may be a period of negotiation between selecting a preferred supplier and agreeing on the final agreement conditions.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Procurement plan
+* Preferred suppliers list
+* Supplier’s tenders
+* Make-or-buy decision list
+
+a|
+* Request for information, proposal, bid, offer or quotation
+* Contracts or purchase orders
+* Selected suppliers list
+
+|===
+
+==== Distribute information
+
+The purpose of Distribute information is to make required information available to project stakeholders, as defined by the communications plan, and to respond to unexpected, specific requests for information.
+
+Organizational policies, procedures and other information may be amended, provided or affected as a result of this process.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Communications plan
+* Progress reports
+* Unexpected requests
+
+a|
+* Distributed information
+
+|===

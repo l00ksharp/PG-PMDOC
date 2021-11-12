@@ -1,0 +1,580 @@
+
+== Planning a project
+
+Planning a project is a recurrent activity, it is performed the first time during the initiating phase, but the project plan is updated before each governing instance occurrence of the project.
+
+The purpose of the project plans is to document the following elements:
+
+why the project is being undertaken;
+
+what will be provided and by whom;
+
+how it will be provided;
+
+what it will cost;
+
+how the project will be implemented, controlled and closed.
+
+____
+Project plans normally consist of the project plan and the project management plan. These plans may be separate documents or combined into one document, but regardless of which option is chosen, the project plans should reflect the integration of scope, time, cost and other subjects.
+____
+
+The project management plan is a document or set of documents that defines how the project is undertaken, monitored and controlled. The project management plan may be applied to the entire project as a whole or to some part of the project through subsidiary plans, such as a risk management plan or quality management plan. Typically, the project management plan defines the roles, responsibilities, organization and procedures for the management of risk, issues, change control, schedule, cost, communication, configuration management, quality, health, environment, safety and other subjects as needed.
+
+The project plan contains baselines for carrying out the project, e.g., in terms of scope, quality, schedule, costs, resources and risks. All parts of the project plan should be consistent and fully integrated. The project plan should include outputs of all relevant project planning processes and the actions necessary to define, integrate and coordinate all appropriate efforts for implementing, controlling and closing the project. The project plan content will vary depending on the application area and complexity of the project.
+
+At the discretion of the performing organization, through coordination with the appropriate project stakeholders, the project plan may be either a detailed document or a summary level document referencing any appropriate subsidiary plans, such as scope plan and schedule. If a summary level project plan is used, it should describe how the management of the individual subsidiary plans would be integrated and coordinated.
+
+The project plan should always be updated and communicated to appropriate stakeholders throughout the project. However, it may start as a high-level plan. This process progressively reworks the plan from initial high- level allocations of scope, budget, resource, schedule and other items into more detailed and tightly allocated packages of work. These packages of work provide for the necessary level of management insight and control as is warranted by the project risk.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project charter
+* Subsidiary plans
+* Lessons learned from previous projects
+* Business case
+* Approved changes
+
+a|
+* Project Plan
+* Project management plan
+
+|===
+
+=== Overview
+
+image:media/image12.png[Une image contenant texte Description générée automatiquement,width=642,height=361]
+
+[width="99%",cols="8%,8%,69%,7%,8%",options="header",]
+|===
+|Step |Who |What |Type |Scale
+|1 |PM |Checks the reference documentation and defines the link:#define-scope[+++scope of the project+++] |O |All
+|2 |PM |The PM link:#plan-quality[+++plans the quality of the projet+++] using or adapting the quality standard document |O |All
+|3 |PM |The PM link:#create-wbs[+++structures the project plan+++] into large work packages |O |All
+|4 |PM |The PM link:#define-activities[+++defines all the activities+++] necessary to produce the deliverables listed in the project scope |O |All
+|5 |PM |The PM link:#sequence-activities[+++sequences the activities+++] according to the structure in place |O |All
+|6 |PM |The PM link:#estimate-activity-durations[+++estimates the duration+++] of each activity |O |All
+|7 |PM |The PM link:#estimate-resources[+++assigns resources+++] to the activities and produces the resource plan |O |L,M
+|8 |PM |The PM link:#develop-schedule[+++establishes the project baseline+++] dates and produces the project’s milestones |O |All
+|9 a,b |PM |Once resources are assigned, the PM can link:#estimate-costs[+++estimate the costs+++] of the projet and calculates the link:#develop-budget[+++budget+++] |O |All
+a|
+10
+
+a,b
+
+|PM |The PM link:#identify-risks[+++identifies+++] and link:#assess-risks[+++assess+++] the risks of the project |O |All
+|11 |PM |The PM link:#plan-procurement[+++plans the procurement+++] of the project |O |All
+|12 |PM |The PM link:#plan-communications[+++plans the communication+++] of the project | |
+|13 |PM |The PM assembles all the previous steps outputs into a single document | |
+|===
+
+[arabic]
+. {blank}
++
+==== Hints / Tips
++
+Does the project planning consider the elements described in the opportunity /scoping document?
++
+Is the level of detail of the planning correct (consider the following factors: project duration, level of certainty of the elements, complexity of the project, level of risk)?
++
+Is the level of detail of the schedule sufficient to start a development phase?
++
+Does the schedule have a concise reading mode (use by the steering committee)?
++
+Did users impose quality criteria requiring extra work in quality assurance?
++
+Is the project in line with the overall program (if applicable)?
++
+Are dependencies identified?
++
+Are milestones clear?
+. {blank}
++
+==== Related documents and forms 
++
+Quality standard
++
+Product Backlog
++
+Product Roadmap
++
+Sprint Roadmap
++
+Sprint Backlog
++
+Project Plan
++
+Resource Plan
++
+Risk log
+
+[arabic, start=2]
+. {blank}
++
+=== Subprocesses
+[arabic]
+.. {blank}
++
+==== Develop the project plan
+
+Planning a project is a recurrent activity, it is performed the first time during the initiating phase, but the project plan is updated before each governing instance occurence of the project.
+
+The purpose of the project plans is to document the following elements:
+
+why the project is being undertaken;
+
+what will be provided and by whom;
+
+how it will be provided;
+
+what it will cost;
+
+how the project will be implemented, controlled and closed.
+
+Project plans normally consist of the project plan and the project management plan. These plans may be separate documents or combined into one document, but regardless of which option is chosen, the project plans should reflect the integration of scope, time, cost and other subjects.
+
+The project management plan is a document or set of documents that defines how the project is undertaken, monitored and controlled. The project management plan may be applied to the entire project as a whole or to some part of the project through subsidiary plans, such as a risk management plan or quality management plan. Typically, the project management plan defines the roles, responsibilities, organisation and procedures for the management of risk, issues, change control, schedule, cost, communication, configuration management, quality, health, environment, safety and other subjects as needed.
+
+The project plan contains baselines for carrying out the project, e.g., in terms of scope, quality, schedule, costs, resources and risks. All parts of the project plan should be consistent and fully integrated. The project plan should include outputs of all relevant project planning processes and the actions necessary to define, integrate and coordinate all appropriate efforts for implementing, controlling and closing the project. The project plan content will vary depending on the application area and complexity of the project.
+
+At the discretion of the performing organisation, through coordination with the appropriate project stakeholders, the project plan may be either a detailed document or a summary level document referencing any appropriate subsidiary plans, such as scope plan and schedule. If a summary level project plan is used, it should describe how the management of the individual subsidiary plans would be integrated and coordinated.
+
+The project plan should always be updated and communicated to appropriate stakeholders throughout the project. However, it may start as a high-level plan. This process progressively reworks the plan from initial high- level allocations of scope, budget, resource, schedule and other items into more detailed and tightly allocated packages of work. These packages of work provide for the necessary level of management insight and control as is warranted by the project risk.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project charter
+* Subsidiary plans
+* Lessons learned from previous projects
+* Business case
+* Approved changes
+
+a|
+* Project Plan
+* Project management plan
+
+|===
+
+==== Define scope
+
+The purpose of Define scope is to achieve clarity of the project scope, including objectives, deliverables, requirements and boundaries, by defining the end state of the project.
+
+The definition of project scope makes clear what the project will contribute to the strategic goals of the organization. The project scope statement should be used as the basis for future project decisions, as well as for communicating the importance of the project and the benefits that should be realized by performing the project successfully.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project charter
+* Approved changes
+* Lessons learned from previous projects
+* Business case
+* Approved changes
+
+a|
+* Scope statement
+* Requirements
+* Deliverables
+
+|===
+
+[width="100%",cols="13%,87%",options="header",]
+|===
+|image:media/image6.png[Notes Post-it contour,width=45,height=45] |*Note:* requirements are often expressed as User Stories.
+|===
+
+==== Plan quality
+
+The purpose of Plan quality is to determine the quality requirements and standards that will be applicable to the project, the deliverables of the project and how the requirements and standards will be met based on the project objectives.
+
+This process includes the following:
+
+determining and agreeing with the project sponsor and other stakeholders as to the objectives and relevant standards to be achieved;
+
+establishing the tools, procedures, techniques and resources necessary to achieve the relevant standards;
+
+determining methodologies, techniques and resources to implement the planned systematic quality activities;
+
+developing the quality plan which includes type of reviews, responsibilities and participants in a timetable in accordance with the project overall schedule;
+
+consolidating all quality information in the quality plan.
+
+Due to the temporary nature of projects and their time constraints, most projects do not have the ability to develop quality standards. Development and organisational acceptance of quality standards and product quality parameters may be outside of the project boundaries.
+
+This acceptance is normally the responsibility of the performing organisation and serves as input to this process. The quality plan should refer to or include the quality policy as established by senior management.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Quality requirements
+* Quality policy
+* Approved changes
+
+a|
+* Quality plan
+
+|===
+
+[width="100%",cols="13%,87%",options="header",]
+|===
+|image:media/image6.png[Notes Post-it contour,width=45,height=45] |*Note:* A standard quality plan document can be used or adapted depending of the project constraints and risks
+|===
+
+==== Create WBS
+
+The purpose of Create work breakdown structure is to provide a hierarchical decomposition framework for presenting the work that needs to be completed, to achieve the project objectives.
+
+The work breakdown structure provides a framework for dividing and subdividing the project work into smaller, thus more manageable, pieces of work. The work breakdown structure can be structured, for example, in project phases, major deliverables, discipline and location. Each descending level of the work breakdown structure describes project work in an increasingly detailed level. It is possible to develop other hierarchical breakdown structures for methodically assessing items such as deliverables, organization, risk and cost accounting of the project.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Requirements
+* Approved changes
+
+a|
+* Work breakdown structure
+* Work breakdown structure dictionnary
+
+|===
+
+✏️ Note: In case of an agile project, link:#writing-user-stories-requirements[+++User Stories+++] can be grouped into link:#grouping-userstories-into-epics[+++Epics+++] which serves as WBS.
+
+==== Define Activities
+
+The purpose of Define activities is to identify, define and document all the activities that should be in the schedule and performed, in order to achieve the project objectives.
+
+This process begins with the work breakdown structure’s lowest level and it identifies, defines and documents the work through the use of smaller components, called activities, in order to provide a basis for project planning, implementing, controlling and closing work.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* link:#writing-user-stories-requirements[+++Requirements+++]
+* Approved changes
+* Work breakdown structure / link:#grouping-userstories-into-epics[+++Epics+++]
+* Work breakdown structure dictionary
+
+a|
+* Activity list / link:#product-backlog[+++Product Backlog+++]
+
+|===
+
+✏️ Note: In case of an agile project, activities are listed in the link:#product-backlog[+++Product Backlog+++]
+
+==== Sequence activities 
+
+The purpose of Sequence activities is to identify and document the logical relationships between project activities.
+
+All activities within the project should be with dependencies to provide a network diagram such that the critical path may be determined. Activities should be logically sequenced with proper precedence relationships and appropriate leads, lags, constraints, interdependencies and external dependencies, in order to support development of a realistic and achievable project schedule.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Activity list / link:#product-backlog[+++Product Backlog+++]
+* Approved changes
+
+a|
+* Activity sequence / Sprint
+
+|===
+
+✏️ Note: In case of an agile project, the link:#product-backlog[+++Product Backlog+++] is organized into link:#creating-a-sprint-backlog[+++Sprints+++], each sprint containing User Stories and actions to implements
+
+==== Estimate resources
+
+The purpose of Estimate resources is to determine the resources needed for each activity in the activity list.
+
+Resources may include people, facilities, equipment, materials, infrastructure and tools. Attributes for resources are recorded, including origin, units and engagement start and end.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Activity list
+* Approved changes
+
+a|
+* Resource requirement
+* Resource plan
+
+|===
+
+==== Estimate activity durations
+
+The purpose of Estimate activity durations is to estimate the time required to complete each activity in the project.
+
+Activity durations are a function of subjects such as quantity and type of resources available, relationship between activities, capacities, planning calendars, learning curves and administrative processing. Administrative processing may affect approval cycles. Future activities may consist of work that will be broken down into more detail as time progresses and more detailed information becomes available. Durations most frequently represent a trade-off between time constraints and resource availability. Periodic re-estimates that result in updated forecasting against the baseline is also a component of this process
+
+Activity duration estimates may need to be revisited once the activities are scheduled and the critical path is identified. If the critical path reveals a completion date of the project later than the required completion date, activities on the critical path may need to be adjusted.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Activity list
+* Resource requirements
+* Historical data
+* Industry standards
+* Approved changes
+
+a|
+* Activity duration estimates
+
+|===
+
+✏️ Note : estimating durations can be done using link:#pert-estimation-technique[+++Pert techniques+++], in agile teams durations are estimated collectively during the link:#sprint-planning[+++Sprint planning+++] and using link:#team-velocity[+++Velocity+++] data.
+
+==== Develop schedule
+
+The purpose of Develop schedule is to calculate the start and end times of the project activities and to establish the overall project schedule baseline.
+
+Activities are scheduled in a logical sequence that identifies durations, milestones and interdependencies to provide a network.
+
+The activity level provides sufficient resolution for management control throughout the project life cycle. The schedule provides a vehicle for evaluating actual progress in time against a predefined objective measurement of achievement.
+
+The schedule is established at the activity level, which provides the basis for assigning resources and developing the time-based budget. Schedule development should continue throughout the project as work progresses, as the project plans change, as anticipated risk events occur or disappear and as new risks are identified. If necessary, duration and resource estimates should be reviewed and revised to develop an approved project schedule that can serve as the baseline against which progress may be tracked.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Activity sequence
+* Activity duration estimates
+* Schedule constraints
+* Risk register
+* Approved changes
+
+a|
+* Schedule
+
+|===
+
+✏️ Note: The schedule of Agile projects is organized into link:#creating-a-sprint-backlog[+++Sprint Backlogs+++] and link:#building-a-sprint-roadmap[+++Sprint Roadmaps+++]. Even in case of an agile project, it is good practice to schedule the project using a project scheduling tool (ex: https://products.office.com/es-es/project/project-and-portfolio-management-software[+++MS Project+++], https://www.projectlibre.com/product/projectlibre-open-source[+++ProjectLibre+++], https://www.ganttproject.biz[+++GanttProject+++], https://www.openproject.org[+++OpenProject+++], …).
+
+More about project scheduling: https://www.pmi.org/learning/library/schedule-101-basic-best-practices-6701[+++https://www.pmi.org/learning/library/schedule-101-basic-best-practices-6701+++]
+
+==== Define project organization
+
+The purpose of Define project organization is to secure all needed commitments from all the parties involved in a project. Roles, responsibilities and authorities that are relevant to the project should be defined in accordance with the project’s nature and complexity and should consider the performing organization’s existing policies.
+
+The definition of the project organizational structure includes the identification of all team members and other persons directly involved in the project work.
+
+This process includes the assignment of project responsibilities and authorities. These responsibilities and authorities may be defined at the appropriate levels of the work breakdown structure. Those definitions usually include responsibilities to perform the approved work, manage progress and allocation of resources.
+
+It is a good practice to clarify roles and responsibilities of the people working on the project. To do so, a RACI Matrix is a good tool. A RACI matrix lists the main tasks (high level) and roles and assigns the following key responsibilities for each of the task/role:
+
+Responsible,
+
+Accountable,
+
+Consulted,
+
+Informed.
+
+✏️ Note: key responsibilities are not limited to R, A, C, I, additional ones can be defined if necessary (example: Audit, Quality Reviewer, …).
+
+Sample RACI Matrix:
+
+[width="100%",cols="21%,16%,16%,16%,15%,16%",options="header",]
+|===
+| |Role 1 |Role 2 |Role 3 |Role 4 |…
+|Task 1 |R |A |C |I |
+|Task 2 |C |A |I |R |
+|Task 3 |I |C |R |A |
+|… | | | | |
+|===
+
+More about RACI Matrix:
+
+https://en.wikipedia.org/wiki/Responsibility_assignment_matrix[+++https://en.wikipedia.org/wiki/Responsibility_assignment_matrix+++]
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Work breakdown structure
+* Resource requirements
+* Stakeholder register
+* Approved changes
+
+a|
+* Role descriptions
+* Project organization chart
+
+|===
+
+==== Estimate costs
+
+The purpose of Estimate costs is to obtain an approximation of the costs needed to complete each project activity and for the project as a whole.
+
+Cost estimates can be expressed in terms of units of measure such as labor hours or number of equipment hours or in currency valuations. When expressed in currency and when performance spans a long period of time, methods taking into account the time value of money should be used. Learning curves may be used when the project includes a number of repetitive and sequential activities. Projects dealing in more than one currency should identify the exchange rates used in costing the project plan.
+
+Reserves or contingency estimates are used to deal with risks or uncertainties and should be added to the project cost estimates and clearly identified.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Work breakdown structure
+* Activity list
+* Project plans
+* Approved changes
+
+a|
+* Cost estimates
+
+|===
+
+==== Develop budget
+
+The purpose of Develop budget is to distribute the project’s budget to the appropriate levels of the work breakdown structure.
+
+The assignment of budgets to scheduled segments of work provides a time-based budget against which actual performance can be compared. Maintaining realistic budgets, directly tied to an established scope of work, is essential for each organization responsible for performing project effort. The budgets are normally distributed in the same manner in which the project estimate was derived. Project cost estimating and budgeting are closely linked. Cost estimating determines the total cost of the project, whereas budgeting identifies where and when costs will be expended and establishes a means whereby performance can be managed.
+
+Objective measures of cost performance should be established in the budgeting process. Setting the objective measures in advance of cost performance assessments enhances accountability and avoids bias.
+
+Reserves or contingency items not assigned to activities or other work scope may be created and used for management control purposes or to cover identified risks. Such items and the associated risk should be clearly identified.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Work breakdown structure
+* Cost estimates
+* Schedule
+
+a|
+* Budget
+
+|===
+
+==== Identify risks
+
+The purpose of Identify risks is to determine potential risk events and their characteristics that, if they occur, may have a positive or negative impact on the project objectives.
+
+This is a repeatable process because new risks may become known or risks may change as the project progresses through its life cycle. Risks with a potential negative impact to the project are referred to as “threats”, whereas risks with a potential positive impact on the project are referred to as “opportunities”. All identified risks should be addressed in accordance with link:#treat-risks[+++Treating Risks+++].
+
+This process should involve multiple participants, typically the project customers, project sponsor, project manager, project management team, project team, senior managers, users, risk management experts, other members of the project steering committee and subject matter experts.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project Plan
+
+a|
+* Risk register
+
+|===
+
+==== Assess risks
+
+The purpose of Assess risks is to measure and prioritize the risks for further action.
+
+This process includes estimating the probability of occurrence of each risk and the corresponding consequence for project objectives, if the risk does occur. The risks are then prioritized in accordance with this assessment considering other factors such as the timeframe and key stakeholders’ risk tolerance.
+
+Risk assessment is a repetitive process in accordance with link:#control-risks[+++Controlling Risks+++]. Trends can indicate the need for more or less risk management action.
+
+Evaluating is a 5-step process:
+
+link:#identify-risks[+++Risk inventory / identification+++]: list all risks and categorize
+
+Risk level evaluation: evaluate impact and probability of occurrence
+
+Define workarounds: define solutions to lower down the risk level
+
+Identify critical elements: define time, events, places where the risk level can reach the highest point
+
+Revise risk inventory: follow-up the risk in inventory
+
+[width="100%",cols="27%,13%,21%,19%,20%",options="header",]
+|===
+a|
+____
+*LIKELIHOOD*
+____
+
+|High | | |
+| |Medium | | |
+| |Low | | |
+| | |Low |Medium |High
+| | |*IMPACT* | |
+|===
+
+✏️ Note: however high the impact might be, there is no risk if the probability of occurrence is low
+
+More about risk management:
+
+https://en.wikibooks.org/wiki/Project_Management/PMBOK/Risk_Management[+++https://en.wikibooks.org/wiki/Project_Management/PMBOK/Risk_Management+++]
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Risk register
+* Project Plan
+
+a|
+* Prioritised Risk
+
+|===
+
+==== Plan procurement
+
+The purpose of Plan procurements is to plan and document the procurement strategy and overall process properly before procurement is initiated.
+
+This process is used to facilitate procurement decision-making, to specify procurement approaches and to develop procurement specifications and requirements.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* In-house capacity and capability
+* Existing contracts
+* Resource requirements
+* Risk register
+
+a|
+* Procurement plan
+* Preferred suppliers list
+* Make-or-buy decision list
+
+|===
+
+==== Plan communications
+
+The purpose of Plan communications is to determine the information and communication needs of the stakeholders.
+
+Although projects have the need to communicate project information, the information needs and methods of distribution vary. Factors for project success include identification of the information needs of the stakeholders and any mandated information needs, e.g., government or regulatory, and determining a suitable means of meeting those needs.
+
+Factors such as geographically dispersed personnel, multiple cultures and organizational factors may significantly affect communication requirements.
+
+This process should begin early in the planning of the project, following a stakeholder identification and analysis, and should be regularly reviewed and revised as needed, in order to ensure continued effectiveness throughout the project. The communications plan defines the information requirements and should be easily accessible by the appropriate stakeholders throughout the project.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Stakeholder register
+* Role descriptions
+* Approved changes
+
+a|
+* Communications plan
+
+|===

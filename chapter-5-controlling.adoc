@@ -1,0 +1,359 @@
+== Controlling a project
+
+The controlling processes are used to monitor, measure and control project performance against the project plan. Consequently, preventive and corrective actions may be taken and change requests made, when necessary, in order to achieve project objectives.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project Plan
+* Previous progress report
+* Change managements
+
+a|
+* Progress report
+* Updated project plan
+* Approved changes
+* Corrective actions
+
+|===
+
+=== Overview
+
+image:media/image14.png[Une image contenant table Description générée automatiquement,width=642,height=361]
+
+[width="99%",cols="8%,8%,69%,7%,8%",options="header",]
+|===
+|Step |Who |What |Type |Scale
+|1 |PM |The PM periodically controls the project works |O |All
+|2 |PM |The PM periodically controls changes |C |All
+|3 |PM a|
+Then PM produces the progress data, in order to do so, the PM controls the following key elements:
+
+* link:#control-scope[+++Project scope+++]
+* link:#control-resources[+++Resources+++] and link:#manage-project-team[+++project team+++]
+* link:#control-schedule[+++Schedule+++]
+* link:#ControlCosts[+++Costs+++]
+* link:#control-risks[+++Risks+++]
+* link:#perform-quality-controls[+++Quality+++]
+* link:#administer-procurement[+++Procurement when needed+++]
+
+The PM then updates the link:#planning-a-project[+++project plan+++] and manages progress data link:#manage-communication[+++communication+++]
+
+|O |All
+|===
+
+[arabic]
+. {blank}
++
+==== Hints / Tips
++
+Is the frequency of the project planning update adequate?
++
+Is the data quality regarding the KPI/KRI good enough?
++
+Is the % of progress factual?
++
+Are all issues documented?
++
+Are there recurrent issues?
++
+Are all progress elements reviewed (tasks, deliverables, resources, budget, risks …)?
++
+Is the critical path affected by the current status of the project?
++
+Regarding the current status of the project is it worth it to continue?
++
+Are arbitrations/escalations elements properly documented?
+. {blank}
++
+==== Related documents and forms 
++
+Progress Report
++
+Project plan
++
+Resource plan
++
+Quality standard
++
+Sprint Backlog
++
+Requirement list / User stories and Epics
++
+Velocity and Burndown
++
+Meeting minutes
+
+[arabic]
+. {blank}
++
+=== Subprocesses
+[arabic]
+.. {blank}
++
+==== Control project work
+
+The purpose of Control project work is to complete project activities in an integrated manner in accordance with the project plans. This process should be performed throughout the project and includes measuring performance, assessing measurements and trends that may affect process improvement and triggering process changes to improve performance. The continuous application of this process provides project stakeholders, including the project sponsor, project manager, project management team and project team, with an accurate and current description of project performance.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plan
+* Progress Data
+* Quality control measurements
+* Risk register
+* Issues log
+
+a|
+* Change Request
+* Progress report
+* Project completion reports
+
+|===
+
+==== Control changes
+
+The purpose of Control changes is to control changes to the project and deliverables and to formalize acceptance or rejection of these changes before subsequent implementation.
+
+Throughout the project it is necessary to record change requests in a change register, evaluate them in terms of benefit, scope, resources, time, cost, quality and risk, assess the impact and obtain approval prior to implementation. A change request may be modified or even cancelled in light of the impact assessment. Once the change has been approved, the decision should be communicated to all the relevant stakeholders for implementation, including updating of project documentation as appropriate. Changes to deliverables should be controlled through procedures such as configuration management.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plan
+* Change Request
+
+a|
+* Approved changes
+* Change register
+
+|===
+
+==== Control scope
+
+The purpose of Control costs is to monitor cost variances and to take appropriate actions.
+
+This process should focus on determining the present project cost status, comparing it to the baseline costs to determine any variance, forecasting projected costs at completion and implementing any appropriate preventive or corrective actions, in order to avoid adverse cost impacts. All changes to the baseline costs should be managed in accordance with link:#control-changes[+++Change Control processes+++].
+
+Once work is started, performance data are accumulated including budgeted costs, actual costs and estimated cost at completion. In order to evaluate cost performance, it is necessary to accumulate scheduling data, such as the progress of scheduled activities and the forecasted completion dates of current and future activities. Variances might arise from poor planning, unforeseen scope changes, technical problems, equipment failures or other external factors, such as supplier difficulties. Regardless of the cause, corrective actions require either a change in the cost baseline or the development of a short-term recovery plan.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Progress data
+* Project plans
+* Budget
+
+a|
+* Actual costs
+* Forecasted costs
+* Change requests
+* Corrective actions
+
+|===
+
+==== Control resources
+
+The purpose of Control resources is to ensure that the resources required to undertake the project work are available and assigned in the manner necessary, in order to meet the project requirements.
+
+Conflicts in availability of resources may occur due to unavoidable circumstances such as equipment failure, weather, labor unrest or technical problems. Such circumstances may require rescheduling of activities resulting in a change of resource requirements for current or subsequent activities. Procedures should be established to identify such shortages to facilitate the reallocation of resources.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Staff assignments
+* Resource availability
+* Progress data
+* Resource requirements
+
+a|
+* Change requests
+* Corrective actions
+
+|===
+
+==== Manage project team
+
+The purpose of Manage project team is to optimize team performance, provide feedback, resolve issues, encourage communication and coordinate changes, in order to achieve project success.
+
+As a result of managing the project team the resource requirements may be revised. Issues should be raised and input provided for organizational personnel performance appraisals and project lessons learned.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Project plans
+* Project organization chart
+* Role descriptions
+* Progress data
+
+a|
+* Staff performance
+* Staff appraisals
+* Change requests
+* Corrective actions
+
+|===
+
+✏️ Note: in Agile project team managements is done through the link:#governance-1[+++Agile governance processes+++] such as the link:#daily-scrum[+++daily scrum+++], link:#sprint-planning[+++sprint planning+++], link:#sprint-review[+++sprint review+++] and link:#closing-a-sprint-a-sprint-retrospective[+++sprint retrospective+++].
+
+==== Control schedule
+
+The purpose of Control schedule is to monitor schedule variances and to take appropriate actions.
+
+This process should focus on determining the current status of the project schedule, comparing it to the approved baseline schedule to determine any variance, forecasting completion dates and implementing any appropriate actions to avoid adverse schedule impacts. All changes to the baseline schedule should be managed in accordance with link:#control-changes[+++Change control processes+++].
+
+Forecasts of schedules at completion should be routinely developed and updated based on past trends and current knowledge.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Schedule
+* Progress data
+* Project plans
+
+a|
+* Change requests
+* Corrective actions
+* Progress. data
+
+|===
+
+✏️ Note: when accurate progress is difficult to estimate, some link:#what-do-to-when-progress-cant-be-measured-with-accuracy[+++simple rules+++] can be used, link:#using-a-burndown-chart[+++burndow chart+++] (or Gantt) can be used to display progress data
+
+==== Control costs
+
+The purpose of Control costs is to monitor cost variances and to take appropriate actions.
+
+This process should focus on determining the present project cost status, comparing it to the baseline costs to determine any variance, forecasting projected costs at completion and implementing any appropriate preventive or corrective actions, in order to avoid adverse cost impacts. All changes to the baseline costs should be managed in accordance with 4.3.6.
+
+Once work is started, performance data are accumulated including budgeted costs, actual costs and estimated cost at completion. In order to evaluate cost performance, it is necessary to accumulate scheduling data, such as the progress of scheduled activities and the forecasted completion dates of current and future activities. Variances might arise from poor planning, unforeseen scope changes, technical problems, equipment failures or other external factors, such as supplier difficulties. Regardless of the cause, corrective actions require either a change in the cost baseline or the development of a short-term recovery plan.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Progress data
+* Project plans
+* Budget
+
+a|
+* Actual costs
+* Forecasted costs
+* Change requests
+* Corrective actions
+
+|===
+
+==== Control risks
+
+The purpose of Control risks is to minimize disruption to the project by determining whether the risk responses are executed and whether they have the desired effect.
+
+It is achieved by tracking the identified risks, identifying and analyzing new risks, monitoring trigger conditions for contingency plans and reviewing progress on risk treatments while evaluating their effectiveness.
+
+Project risks should be periodically evaluated throughout the project life cycle, when a new risk arises or when a milestone is reached.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Risk register
+* Progress data
+* Project plans
+* Risk responses
+
+a|
+* Change requests
+* Corrective actions
+
+|===
+
+==== Perform quality controls
+
+The purpose of Perform quality control is to determine whether the established project objectives, quality requirements and standards are being met and to identify causes of, and ways to eliminate, unsatisfactory performance.
+
+This process should be applied during the whole project life cycle and includes the following:
+
+monitoring the quality of the deliverables and processes is being met and detecting defects by using the established tools, procedures and techniques;
+
+analyzing possible causes of defects;
+
+determining the preventive actions and change requests;
+
+communicating the corrective actions and change requests to the appropriate project organization members.
+
+Quality control may be performed outside the project boundaries by other parts of the performing organization or by the customers. Quality control may identify causes of poor process performance or product quality and may result in recommended actions or change requests, when necessary to eliminate non-conforming performance.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Progress data
+* Deliverables
+* Quality plan
+
+a|
+* Quality control measurements
+* Verified deliverables
+*  Inspection reports
+*  Change requests
+*  Corrective actions
+
+|===
+
+✏️ Note: link:#common-project-kpi[+++common project KPI+++] can be used to setup and measure quality.
+
+==== Administer procurement
+
+The purpose of Administer procurements is to manage the relationship between the buyer and the suppliers.
+
+This process includes monitoring and reviewing the suppliers’ performance and receipt of regular progress reports, and taking appropriate action to promote compliance with all the project requirements, including contract types, quality, performance, timeliness and safety.
+
+This process starts with issuance of the agreement documentation and ends with agreement closure.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Contracts or purchase orders
+* Project plans
+* Approved changes
+* Inspection reports
+
+a|
+* Change requests
+* Corrective actions
+
+|===
+
+==== Manage communication
+
+The purpose of Manage communications is to ensure that the communication needs of the project stakeholders are satisfied and to resolve communication issues if and when they arise.
+
+Success or failure of a project may depend on how well the various project team members and stakeholders communicate with each other. This process should focus on the following:
+
+increasing the understanding and cooperation among the various stakeholders through good communications;
+
+providing timely, accurate and unbiased information;
+
+resolving communication issues to minimize the risk that the project is negatively affected by unknown or unresolved stakeholder issues or misunderstandings.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Input |Output
+a|
+* Communications plan
+* Distributed information
+
+a|
+* Accurate and timely information
+* Corrective actions
+
+|===
